@@ -19,11 +19,4 @@ public class ProductMapper implements OneToOneMapper<ProductEntity, ProductDto> 
         return null;
     }
 
-    public List<ProductEntity> mapToEntities(List<ProductDto> dtos) {
-        return dtos.stream().map(this::mapTo).collect(Collectors.toList());
-    }
-
-    public List<ProductDto> mapFromEntities(List<ProductEntity> entities) {
-        return entities.stream().map(this::mapFrom).collect(Collectors.toList());
-    }
 }
