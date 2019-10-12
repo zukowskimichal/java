@@ -12,19 +12,18 @@ public class Category {
     public Category() {
     }
 
+    public Category(CategoryBuilder builder) {
+        this.id = builder.id;
+        this.node = builder.node;
+
+    }
+
     public static CategoryBuilder builder() {
         return new CategoryBuilder();
     }
 
     public void setId(int id) {
         this.id = id;
-    }
-
-
-    public Category(CategoryBuilder builder) {
-        this.id = builder.id;
-        this.node = builder.node;
-
     }
 
     public static class CategoryBuilder {

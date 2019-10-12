@@ -6,10 +6,13 @@ import java.util.stream.Collectors;
 
 public interface OneToOneMapper<T, G> {
 
-    G mapFrom(T entity);
-    T mapTo(G dto);
+    G map(T t);
 
-    default List<T> mapToList(List<G> dtos) {
-        return dtos.stream().map(this::mapTo).collect(Collectors.toList());
+    default G map(T t, Function<T, G> map) {
+        return map.apply(t);
+    }
+
+    default List<G> mapToList(List<T> t) {
+        return t.stream().map(this::map).collect(Collectors.toList());
     }
 }
