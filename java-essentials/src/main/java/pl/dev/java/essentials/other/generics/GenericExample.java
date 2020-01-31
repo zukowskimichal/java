@@ -1,6 +1,6 @@
-package pl.dev.java.essentials.generics;
+package pl.dev.java.essentials.other.generics;
 
-import pl.dev.java.essentials.exceptions.TechnicalException;
+import pl.dev.java.essentials.other.exceptions.TechnicalException;
 
 import java.io.Serializable;
 import java.util.Arrays;

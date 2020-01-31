@@ -1,7 +1,7 @@
-package pl.dev.java.essentials.generics;
+package pl.dev.java.essentials.other.generics;
 
-import pl.dev.java.essentials.dto.ProductDto;
-import pl.dev.java.essentials.dto.ProductEntity;
+import pl.dev.java.essentials.other.dto.ProductDto;
+import pl.dev.java.essentials.other.dto.ProductEntity;
 
 public class ProductMapper implements OneToOneMapper<ProductDto, ProductEntity> {
 

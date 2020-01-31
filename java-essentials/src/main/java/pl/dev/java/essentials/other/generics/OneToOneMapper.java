@@ -1,4 +1,4 @@
-package pl.dev.java.essentials.generics;
+package pl.dev.java.essentials.other.generics;
 
 import java.util.List;
 import java.util.function.Function;

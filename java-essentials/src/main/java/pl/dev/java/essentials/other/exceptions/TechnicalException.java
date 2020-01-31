@@ -1,4 +1,4 @@
-package pl.dev.java.essentials.exceptions;
+package pl.dev.java.essentials.other.exceptions;
 
 public class TechnicalException extends RuntimeException {
 
