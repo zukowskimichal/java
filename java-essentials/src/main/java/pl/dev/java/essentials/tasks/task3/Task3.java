@@ -1,11 +1,14 @@
 package pl.dev.java.essentials.tasks.task3;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Stream;
 
 public class Task3 {
 
-    private static final List<Character> ODD = new ArrayList<>();
+    private static final Set<Character> ODD = new HashSet<>();
     private static final Character ZERO = '0';
 
     static {
@@ -27,9 +30,8 @@ public class Task3 {
         }
         return stringBuilder.toString();
     }
-/*
 
-    public static String checkOddEvenViaStream(String inputLine) {
+/*    public static String checkOddEvenViaStream(String inputLine) {
         //assume inputLine is a number
         String[] chars = inputLine.split("");
 
@@ -37,8 +39,7 @@ public class Task3 {
             return previousElement.charAt(previousElement.length() - 1) previousElement + element;
         });
 
-    }
-*/
+    }*/
 
     private static void buildString(StringBuilder stringBuilder, char[] charArray, int i) {
         if (ODD.contains(charArray[i]) && ODD.contains(charArray[i + 1])) {

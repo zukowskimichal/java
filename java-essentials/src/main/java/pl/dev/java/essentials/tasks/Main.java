@@ -1,5 +1,6 @@
 package pl.dev.java.essentials.tasks;
 
+import pl.dev.java.essentials.tasks.task7.Task7;
 import pl.michal.tasks.task1.Task1;
 import pl.michal.tasks.task7.Task7;
 
