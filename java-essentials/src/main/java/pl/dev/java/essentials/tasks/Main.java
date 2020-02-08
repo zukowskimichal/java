@@ -1,10 +1,8 @@
 package pl.dev.java.essentials.tasks;
 
-import pl.dev.java.essentials.tasks.task7.Task7;
-import pl.michal.tasks.task1.Task1;
-import pl.michal.tasks.task7.Task7;
-
 import java.util.Scanner;
+import pl.dev.java.essentials.tasks.task1.Task1;
+import pl.dev.java.essentials.tasks.task7.Task7;
 
 public class Main {
 
@@ -14,7 +12,7 @@ public class Main {
         try (Scanner in = new Scanner(System.in)) {
             while (in.hasNext()) {
                 String sentence = in.nextLine();
-                Task7.findPairsThatSumUpToValue(sentence);
+                Task7.findAndPrintPairs(sentence);
             }
         }
 
@@ -64,7 +62,6 @@ public class Main {
             }
         }*/
 
-
         //TASK2
         /*
         try (Scanner in = new Scanner(System.in)) {
@@ -82,7 +79,6 @@ public class Main {
             names = in.nextLine();
         }
         System.out.println(Task1.isShiftedClever(names));
-
 
     }
 }

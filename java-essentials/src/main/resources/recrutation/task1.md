@@ -1,0 +1,1 @@
+find secondSmallest integer from integer array. 

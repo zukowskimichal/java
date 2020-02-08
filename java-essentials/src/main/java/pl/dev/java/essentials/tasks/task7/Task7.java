@@ -1,13 +1,12 @@
 package pl.dev.java.essentials.tasks.task7;
 
-import org.apache.commons.lang3.tuple.ImmutablePair;
-
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import org.apache.commons.lang3.tuple.ImmutablePair;
 
 public class Task7 {
 

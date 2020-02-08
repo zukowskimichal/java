@@ -16,7 +16,6 @@ class Node {
 class Solution {
 
     public static int getHeight(Node root) {
-
         return Objects.isNull(root)
                 ? -1
                 : 1 + Math.max(getHeight(root.left), getHeight(root.right));

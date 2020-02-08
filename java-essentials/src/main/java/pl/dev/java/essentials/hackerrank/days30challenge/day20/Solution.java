@@ -18,8 +18,6 @@ public class Solution {
         System.out.println("Array is sorted in " + swaps + " swaps.");
         System.out.println("First Element: " + a[0]);
         System.out.println("Last Element: " + a[a.length - 1]);
-
-
     }
 
     private static void sort(int[] array) {

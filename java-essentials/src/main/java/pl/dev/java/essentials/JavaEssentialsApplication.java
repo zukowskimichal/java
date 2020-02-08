@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JavaEssentialsApplication {
 
     public static void main(String[] args) {
-
         SpringApplication.run(JavaEssentialsApplication.class, args);
+
     }
 
 }
