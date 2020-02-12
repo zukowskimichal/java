@@ -50,16 +50,7 @@ public class Task4 {
 
     private static int findRows(Long number) {
         double sqrDelta = Math.sqrt(1 + 8 * number);
-        double x1 = ((double) -4 * number) / (-1.0 - sqrDelta);
+        double x1 = (double) (-4 * number) / (-1.0 - sqrDelta);
         return (int) x1;
     }
-
-//    1
-//    1 1
-//    1 1 1
-//
-//    n  coins -> n rows = 1 + 2 + 3 + 4
-//    an=a1+(n−1)⋅r
-    // sn = a1 + an / 2 * n
-
 }
