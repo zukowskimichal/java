@@ -3,7 +3,7 @@ package pl.dev.java.essentials.other.multithreading.producerConsumer;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) {
         BlockingQueue<String> sharedQueue = new LinkedBlockingQueue<>(100);

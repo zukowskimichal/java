@@ -3,12 +3,12 @@ package pl.dev.java.essentials.other.multithreading.producerConsumer;
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 
-public class Consumer<T> extends Thread {
+class Consumer<T> extends Thread {
 
     private final BlockingQueue<T> queue;
     private final Random random = new Random();
 
-    public Consumer(BlockingQueue<T> queue) {
+    Consumer(BlockingQueue<T> queue) {
         this.queue = queue;
     }
 

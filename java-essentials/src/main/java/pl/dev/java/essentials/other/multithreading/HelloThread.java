@@ -1,6 +1,6 @@
 package pl.dev.java.essentials.other.multithreading;
 
-public class HelloThread extends Thread {
+class HelloThread extends Thread {
 
     @Override
     public void run() {

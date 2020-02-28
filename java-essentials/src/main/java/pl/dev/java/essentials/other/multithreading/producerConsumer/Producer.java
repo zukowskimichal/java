@@ -4,14 +4,14 @@ import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 import java.util.function.Function;
 
-public class Producer<T> extends Thread {
+class Producer<T> extends Thread {
 
     private final BlockingQueue<T> queue;
     private final Random random = new Random();
     private final Function<String, T> msgCreator;
     private int counter = 0;
 
-    public Producer(BlockingQueue<T> queue, Function<String, T> msgCreator) {
+    Producer(BlockingQueue<T> queue, Function<String, T> msgCreator) {
         this.queue = queue;
         this.msgCreator = msgCreator;
     }

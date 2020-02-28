@@ -1,6 +1,6 @@
 package pl.dev.java.essentials.other.multithreading;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(new HelloRunnable(), "new thread");

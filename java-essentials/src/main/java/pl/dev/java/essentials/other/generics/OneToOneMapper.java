@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public interface OneToOneMapper<T, G> {
+interface OneToOneMapper<T, G> {
 
     G map(T t);
 
@@ -13,6 +13,8 @@ public interface OneToOneMapper<T, G> {
     }
 
     default List<G> mapToList(List<T> t) {
-        return t.stream().map(this::map).collect(Collectors.toList());
+        return t.stream()
+                .map(this::map)
+                .collect(Collectors.toList());
     }
 }

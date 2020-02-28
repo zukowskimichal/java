@@ -5,24 +5,24 @@ import java.util.List;
 import java.util.Random;
 import org.springframework.util.CollectionUtils;
 
-public class BlockingQueue {
+class BlockingQueue {
 
     private List<Object> queue = new LinkedList<>();
     private int limit;
 
-    public void add(Object o) {
+    void add(Object o) {
         queue.add(o);
     }
 
-    public BlockingQueue(int limit) {
+    BlockingQueue(int limit) {
         this.limit = limit;
     }
 
-    public int remainingCapacity() {
+    int remainingCapacity() {
         return limit - queue.size();
     }
 
-    public synchronized void enqueue(Object item) throws InterruptedException {
+    synchronized void enqueue(Object item) throws InterruptedException {
         while (queue.size() == limit) {
             wait();
         }
@@ -32,7 +32,7 @@ public class BlockingQueue {
         queue.add(item);
     }
 
-    public synchronized Object dequeue() throws InterruptedException {
+    synchronized Object dequeue() throws InterruptedException {
         while (CollectionUtils.isEmpty(queue)) {
             wait();
         }

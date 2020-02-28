@@ -2,14 +2,14 @@ package pl.dev.java.essentials.other.multithreading.philosophers;
 
 import java.util.Random;
 
-public class PhilosopherLeft extends Thread {
+class PhilosopherLeft extends Thread {
 
     private final Object rightFork;
     private final Object leftFork;
     private int food = 100;
-    private Random random = new Random();
+    private final Random random = new Random();
 
-    public PhilosopherLeft(Object leftFork, Object rightFork) {
+    PhilosopherLeft(Object leftFork, Object rightFork) {
         this.leftFork = leftFork;
         this.rightFork = rightFork;
     }

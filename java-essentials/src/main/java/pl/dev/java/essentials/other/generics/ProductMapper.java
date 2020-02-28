@@ -3,8 +3,7 @@ package pl.dev.java.essentials.other.generics;
 import pl.dev.java.essentials.other.dto.ProductDto;
 import pl.dev.java.essentials.other.dto.ProductEntity;
 
-public class ProductMapper implements OneToOneMapper<ProductDto, ProductEntity> {
-
+class ProductMapper implements OneToOneMapper<ProductDto, ProductEntity> {
 
     public ProductEntity map(ProductDto dto) {
         return map(dto, this::innerMap);
@@ -13,6 +12,5 @@ public class ProductMapper implements OneToOneMapper<ProductDto, ProductEntity> 
     private ProductEntity innerMap(ProductDto dto) {
         return new ProductEntity();
     }
-
 
 }

@@ -1,6 +1,6 @@
 package pl.dev.java.essentials.other.multithreading.philosophers;
 
-public class DinningPhilosophers {
+ class DinningPhilosophers {
 
     public static void main(String[] args) {
         Object fork1 = new Object();
